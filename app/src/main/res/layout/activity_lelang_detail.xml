@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".BarangDetail">
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kumatrace">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:fontFamily="@font/gothic_bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Register"
+        android:id="@+id/lbl_title">
+
+    </TextView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nama Barang"
+            android:fontFamily="@font/gothic"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Tanggal Lelang"
+            android:fontFamily="@font/gothic"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="yyyy/MM/dd"
+            android:inputType="none"
+            android:longClickable="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp">
+
+        </EditText>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/btn_back"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <Button
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_confirm"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

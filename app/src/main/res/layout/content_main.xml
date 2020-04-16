@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TextView
+        android:id="@+id/lbl_nama"
+        android:paddingLeft="10dp"
+        android:textSize="24sp"
+        android:text="Zhofron Al Fajr"
+        android:fontFamily="@font/gothic_bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:shadowColor="@color/white"
+            android:text="Logout"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_rekap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Rekap"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_bold"
+        android:gravity="center"
+        android:text="ONGOING AUCTION"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/list_ongoing"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="15dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_bold"
+        android:gravity="center"
+        android:text="UPCOMING AUCTION"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/list_upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="15dp">
+
+    </ListView>
+
+</LinearLayout>
